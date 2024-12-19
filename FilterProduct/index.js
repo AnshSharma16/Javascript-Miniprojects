@@ -6,7 +6,7 @@ const categoryBtns = document.querySelectorAll('.category-btn');
 function filterProduct() {
     const searchValue = searchInput.value.toLowerCase(); // Use 'value' to get input text
     const productItems = document.querySelectorAll('.product-item');
-    const activeCategory = document.querySelector('.category-btn.active')?.dataset.category || 'all'; // Handle 'all' by default
+    const activeCategory = document.querySelector('.category-btn.active').dataset.category || 'all'; // Handle 'all' by default
 
     productItems.forEach(item => {
         const title = item.querySelector('h3').innerText.toLowerCase();

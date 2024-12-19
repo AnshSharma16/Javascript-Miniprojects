@@ -9,23 +9,26 @@
 </head>
 <body>
     <div class="filter-container">
+        <!-- Search Bar -->
         <div class="search-container">
-            <input type="text" id="search-input" placeholder="
-            Search...">
+            <input type="text" id="search-input" placeholder="Search...">
             <button id="search-btn">Search</button>
         </div>
+
+        <!-- Category Buttons -->
         <div class="category-container">
-            <div class="category-btn">All Products</div>
-            <div class="category-btn">Electronics</div>
-            <div class="category-btn">Clothing</div>
-            <div class="category-btn">Home & Garden</div>
+            <div class="category-btn active" data-category="all">All Products</div>
+            <div class="category-btn" data-category="electronics">Electronics</div>
+            <div class="category-btn" data-category="clothing">Clothing</div>
+            <div class="category-btn" data-category="home">Home & Garden</div>
         </div>
     </div>
 
+    <!-- Product List -->
     <div id="product-list">
         <div class="product-item" data-category="electronics">
             <h3>Smartphone</h3>
-            <p>Description of SmartPhone product</p>
+            <p>Description of Smartphone product</p>
         </div>
 
         <div class="product-item" data-category="clothing">
@@ -33,7 +36,7 @@
             <p>Description of T-Shirt product</p>
         </div>
 
-        <div class="product-item" data-category="electronics">
+        <div class="product-item" data-category="home">
             <h3>Coffee Maker</h3>
             <p>Description of Coffee Maker product</p>
         </div>
