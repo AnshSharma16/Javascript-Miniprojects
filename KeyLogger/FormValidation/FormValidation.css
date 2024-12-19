@@ -1,0 +1,88 @@
+/* Reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: rgb(243, 126, 31); /* Warm orange background */
+    font-family: Arial, sans-serif; /* Added a default font family */
+}
+
+/* Form Styling */
+#form {
+    width: 500px;
+    height: auto; /* Allow dynamic height for better spacing */
+    padding: 20px;
+    background-color: white;
+    margin: 20vh auto 0 auto; /* Centered vertically and horizontally */
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+}
+
+/* Heading Styling */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px; /* Added padding for better spacing */
+    font-size: 24px;
+    color: rgb(50, 50, 50); /* Darker color for better readability */
+}
+
+/* Form Control Wrapper */
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Increased spacing between fields */
+}
+
+/* Input Styling */
+.form-control input {
+    border: 2px solid white;
+    display: block;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 14px; /* Adjusted font size for better consistency */
+    width: 100%;
+    background-color: #f9f9f9; /* Light background for inputs */
+    transition: border-color 0.3s ease; /* Smooth transition for border */
+}
+
+/* Error Message Styling */
+.form-control .error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 15px; /* Consistent height for alignment */
+    margin-top: 5px; /* Spacing above the error message */
+}
+
+.form-content{
+    padding: 20px;
+}
+
+/* Input Focus State */
+.form-control input:focus {
+    border-color: rgb(243, 126, 31); /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styling */
+#form #btn {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(243, 126, 31); /* Consistent with body color */
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: rgb(200, 100, 20); /* Darker shade on hover */
+}
