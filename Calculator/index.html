@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculator</h1>
+    </header>
+
+    <main>
+        <div class="calculator">
+            <!-- Display Screen -->
+            <input type="text" id="result" class="screen" placeholder="0" disabled />
+
+            <!-- Calculator Buttons -->
+            <table cellspacing="4" border="2" bordercolor="black">
+                <tbody>
+                    <tr>
+                        <td><button  class="btn" onclick="appendValue('(')">(</button></td>
+                        <td><button  class="btn" onclick="appendValue(')')">)</button></td>
+                        <td><button  class="btn" onclick="pop()">D</button></td>
+                        <td><button  class="btn" onclick="appendValue('/')">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button  class="btn" onclick="appendValue('7')">7</button></td>
+                        <td><button  class="btn" onclick="appendValue('8')">8</button></td>
+                        <td><button  class="btn" onclick="appendValue('9')">9</button></td>
+                        <td><button  class="btn" onclick="appendValue('*')">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button  class="btn" onclick="appendValue('4')">4</button></td>
+                        <td><button  class="btn" onclick="appendValue('5')">5</button></td>
+                        <td><button  class="btn" onclick="appendValue('6')">6</button></td>
+                        <td><button  class="btn" onclick="appendValue('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button  class="btn" onclick="appendValue('1')">1</button></td>
+                        <td><button  class="btn" onclick="appendValue('2')">2</button></td>
+                        <td><button  class="btn" onclick="appendValue('3')">3</button></td>
+                        <td><button  class="btn" onclick="appendValue('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button  class="btn" onclick="clearAll()">C</button></td>
+                        <td><button  class="btn" onclick="appendValue('0')">0</button></td>
+                        <td><button  class="btn" onclick="appendValue('.')">.</button></td>
+                        <td><button  class="btn-equal" onclick="calculate()">=</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Calculator App. Built with ❤️</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
